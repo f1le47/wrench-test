@@ -1,13 +1,15 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import addressSlice from "@store/reducers/addressSlice";
+import articleSlice from "./reducers/articleSlice";
 
 const rootReducer = combineReducers({
-  address: addressSlice
+  address: addressSlice,
+  article: articleSlice
 })
 
 export const setupStore = () => {
   return configureStore({
-    reducer: rootReducer
+    reducer: rootReducer,
   })
 }
 

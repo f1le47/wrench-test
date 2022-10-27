@@ -7,7 +7,7 @@ interface IAddressSlice {
 
 const initialState: IAddressSlice = {
   isLoading: false,
-  addresses: []
+  addresses: ['Москва Ленина 103а', 'Армавир Ленина 103б']
 }
 
 export const addressSlice = createSlice({

@@ -1,4 +1,6 @@
+import { ArticleType } from "@src/types/ArticleType";
+
 export interface IArticle {
   title: string;
-  text: string;
+  article: ArticleType;
 }

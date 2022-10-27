@@ -1,0 +1,24 @@
+@import '@styles/variables.scss';
+
+.addresses {
+  margin-top: 32px;
+  padding: 24px;
+  box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
+  border-radius: 10px;
+  .title {
+    padding-bottom: 16px;
+    @include font_bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .addresses {
+    .title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

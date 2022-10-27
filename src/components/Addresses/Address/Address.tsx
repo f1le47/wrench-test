@@ -3,9 +3,9 @@ import { IAddress } from './IAddress';
 
 const Address = ({address}: IAddress) => {
   return (
-    <span className={s.address}>
-      {address}
-    </span>
+    <div className={s.address}>
+      <span className={s.address__text}>{address}</span>
+    </div>
   );
 };
 
