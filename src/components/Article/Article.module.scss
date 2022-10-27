@@ -1,0 +1,26 @@
+@import '@styles/variables.scss';
+
+.article {
+  .title {
+    @include font_medium;
+    font-size: 20px;
+    line-height: 24px;
+    color: $surface-text;
+  }
+  .text {
+    margin-top: 24px;
+    @include font_medium;
+    font-size: 20px;
+    line-height: 24px;
+    color: $surface-text;
+    white-space: pre-line
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .article {
+    .text {
+      margin-top: 0;
+    }
+  }
+}
